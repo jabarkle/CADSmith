@@ -1,0 +1,15 @@
+# Core CAD
+cadquery>=2.4
+numpy
+numpy-stl
+trimesh
+
+# LLM
+anthropic>=0.40.0
+
+# Environment
+python-dotenv
+
+# Experiment tracking
+pandas
+matplotlib

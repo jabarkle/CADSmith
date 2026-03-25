@@ -1,0 +1,45 @@
+# Secrets
+.env
+
+# Paper (will link arXiv separately)
+Paper/
+
+# Reference PDFs
+*.pdf
+
+# Internal notes
+Progress.md
+Dataset_V2_Plan.md
+Notes from track 2 for paper.md
+
+# Experiment results (large, run-specific)
+results/
+
+# Generated CAD outputs
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+.cursor/
+
+# Experiment logs
+experiments/logs/
+
+# OS
+.DS_Store
+Thumbs.db
+models/
