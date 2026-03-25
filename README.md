@@ -42,7 +42,9 @@ Left: isometric view for overall shape. Center: high-angle rear view revealing t
 
 We evaluate on 100 hand-written prompts across three difficulty tiers:
 
-![Example parts from each tier](assets/tier_examples.png)
+<p align="center">
+  <img src="assets/tier_examples.png" alt="Example parts from each tier" width="600"/>
+</p>
 
 - **T1 — Primitives** (50 entries): Boxes, cylinders, cones, tori. One to three operations each.
 - **T2 — Engineering Parts** (25 entries): Brackets, flanges, gears, plates with hole patterns. Three to eight operations.
