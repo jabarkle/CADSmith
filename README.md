@@ -1,8 +1,8 @@
-# AutoFab
+# CADSmith
 
 **Multi-agent CAD generation with programmatic geometric validation.**
 
-AutoFab takes a natural language description of a 3D part and produces manufacturing-ready CAD geometry. It works by having multiple LLM agents collaborate — one plans, one writes CadQuery code, one validates the geometry using real measurements from the CAD kernel, and one refines the code when something is off. The result is a closed loop that iterates until the part is dimensionally correct, not just visually plausible.
+CADSmith takes a natural language description of a 3D part and produces manufacturing-ready CAD geometry. It works by having multiple LLM agents collaborate — one plans, one writes CadQuery code, one validates the geometry using real measurements from the CAD kernel, and one refines the code when something is off. The result is a closed loop that iterates until the part is dimensionally correct, not just visually plausible.
 
 ![Pipeline overview](assets/overview.jpg)
 
@@ -10,7 +10,7 @@ AutoFab takes a natural language description of a 3D part and produces manufactu
 
 Current text-to-CAD systems either generate in a single pass with no verification, or use visual feedback that can't resolve millimeter-scale dimensional errors. A part that *looks* right but has a 3mm bounding box error is useless for manufacturing.
 
-AutoFab combines two things that prior work kept separate:
+CADSmith combines two things that prior work kept separate:
 - **Exact geometric measurements** from the OpenCASCADE kernel (bounding box, volume, face counts, solid validity)
 - **Visual inspection** from a vision-language model that looks at three rendered views of the part
 
@@ -75,7 +75,7 @@ This quadcopter frame (T3\_019) scored F1 = 0.963 and IoU = 0.985 — it passed 
 ## Project Structure
 
 ```
-autofab/
+CADSmith/
   pipeline.py      # Main pipeline orchestration (Planner → Coder → Executor → Validator → Refiner loop)
   agents.py        # All LLM agent definitions (Planner, Coder, Error Refiner, Judge, Refiner)
   executor.py      # Sandboxed subprocess execution, OCCT geometry extraction, STEP/STL export
@@ -101,7 +101,7 @@ requirements.txt   # Python dependencies
 
 ## Setup
 
-AutoFab uses CadQuery, which needs a conda environment:
+CADSmith uses CadQuery, which needs a conda environment:
 
 ```bash
 conda create -n cadquery python=3.10
