@@ -158,7 +158,19 @@ python scripts/analyze_results.py
 
 ## Citation
 
-Paper link coming soon.
+https://arxiv.org/abs/2603.26512
+
+```bib
+@misc{barkley2026cadsmithmultiagentcadgeneration,
+      title={CADSmith: Multi-Agent CAD Generation with Programmatic Geometric Validation}, 
+      author={Jesse Barkley and Rumi Loghmani and Amir Barati Farimani},
+      year={2026},
+      eprint={2603.26512},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2603.26512}, 
+}
+```
 
 ## Authors
 
